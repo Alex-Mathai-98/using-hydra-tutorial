@@ -1,0 +1,5 @@
+name,model,dataset,lr,batch_size,timestamp,folder_name,full_path,sweep_parent,job_number
+m2_d3,codesage_v2,commit_plus_PR_qwen_32B,2e-05,1,2025-08-28T18:42:51.001902,m2_d3,outputs/m2_d3,,
+m1_d3,codesage_v1,commit_plus_PR_qwen_32B,2e-05,1,2025-08-28T18:42:29.760296,job_0_lr_2e-05_ep_1,outputs/m1_d3/job_0_lr_2e-05_ep_1,m1_d3,job_0_lr_2e-05_ep_1
+m1_d3,codesage_v1,commit_plus_PR_qwen_32B,2e-06,1,2025-08-28T18:42:29.906392,job_1_lr_2e-06_ep_1,outputs/m1_d3/job_1_lr_2e-06_ep_1,m1_d3,job_1_lr_2e-06_ep_1
+m1_d3,codesage_v1,commit_plus_PR_qwen_32B,2e-07,1,2025-08-28T18:42:30.040913,job_2_lr_2e-07_ep_1,outputs/m1_d3/job_2_lr_2e-07_ep_1,m1_d3,job_2_lr_2e-07_ep_1

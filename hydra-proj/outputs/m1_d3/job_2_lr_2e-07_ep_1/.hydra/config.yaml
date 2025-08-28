@@ -1,0 +1,18 @@
+model:
+  name: m1
+  base_model: codesage_v1
+dataset:
+  name: d3
+  pr_data: true
+  commit_data: true
+  model: qwen_32b
+  dataset_name: commit_plus_PR_qwen_32B
+hyperparam:
+  epochs: 1
+  batch_size: 1
+  lr: 2.0e-07
+  logging:
+    log_level: INFO
+    save_model: true
+experiment:
+  name: ${model.name}_${dataset.name}

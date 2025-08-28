@@ -1,0 +1,36 @@
+# In YAML syntax, the "-" indicates
+# a 'list'. 
+
+# So 'defaults' here is a list of dictionaries
+
+defaults:
+  - model: codesage_v1
+  - dataset: commit_plus_PR_qwen_32B
+  - hyperparam: basic_config
+  - _self_ # Mandatory statement needed in Hydra
+
+# The python equivalent of `defaults`
+# defaults = [
+#     {"model": "codesage_v1"},
+#     {"dataset": "commit_plus_PR_qwen_32B"}
+# ]
+
+##################################
+# this is where we will name the experiment
+# keeping this short and sweet. 
+
+# Note how the '.name' attributes 
+# are defined in the respective config files
+experiment:
+  name: ${model.name}_${dataset.name}
+
+##################################
+
+# hydra output directory configuration
+hydra:
+  run:
+    dir: ./outputs/${experiment.name}
+  sweep:
+    dir: ./outputs/${experiment.name}
+    subdir: job_${hydra:job.num}_lr_${hyperparam.lr}_ep_${hyperparam.epochs}
+

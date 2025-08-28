@@ -1,0 +1,6 @@
+
+name: d3
+pr_data: true
+commit_data: true
+model: qwen_32b
+dataset_name: commit_plus_PR_qwen_32B

@@ -1,0 +1,8 @@
+{
+  "name": "m1_d3",
+  "model": "codesage_v1",
+  "dataset": "commit_plus_PR_qwen_32B",
+  "lr": 2e-07,
+  "batch_size": 1,
+  "timestamp": "2025-08-28T18:42:30.040913"
+}
